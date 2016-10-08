@@ -1,0 +1,9 @@
+frontend/node_modules/
+
+server/node_modules
+server/public/storage
+server/vendor/
+server/.idea
+server/Homestead.json
+server/Homestead.yaml
+server/.env
