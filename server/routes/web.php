@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return response([
+        [
+            'name' => 'Mark',
+            'age'  => 20,
+        ],
+        [
+            'name' => 'Tony',
+            'age'  => 23,
+        ]
+    ]);
 });
