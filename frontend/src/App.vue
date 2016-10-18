@@ -24,11 +24,24 @@
 
 <script>
 import Hello from './components/Hello'
+import { default as http } from 'axios'
 
 export default {
+
   components: {
     Hello
+  },
+
+  created () {
+    http.get('http://localhost:8000/api/test')
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
+
 }
 </script>
 
